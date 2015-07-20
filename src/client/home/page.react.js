@@ -17,6 +17,7 @@ export default class Page extends Component {
       <DocumentTitle title={msg.title}>
         <div className="home-page">
           <p>
+            SOME TEXT HERE
             <FormattedHTMLMessage message={msg.infoHtml} />{' '}
             <Link to="todos">{msg.todos}</Link>.
           </p>
