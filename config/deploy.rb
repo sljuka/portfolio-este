@@ -40,7 +40,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app) do
-      execute :sudo, :service, "portfolio-este restart"
+      execute :sudo, "/sbin/restart portfolio-este"
     end
   end
 
